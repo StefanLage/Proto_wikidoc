@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charser="utf-8" />
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="base64.js"></script>
+	<script type="text/javascript" src="script_ajax.js"></script>
+	<script type="text/javascript" src="jquery.textareaAutoResize.js"></script>
+	<link rel="stylesheet" href="main.css" type="text/css"  media="screen" />
+</head>
+
+
+
+<body>
+	<header>
+		<nav class="main">
+			<ul>
+				<li>
+					<form id="testCnx" name="testCnx" action="#">
+
+						<input id="login" type="text" autofocus="autofocus" placeholder="Username" name="login">
+						<input id="password" type="password" autofocus="autofocus" placeholder="Password" name="password">
+
+						<input type="button" value="Commit" tabindex="3" class="gitHubSubmit" onclick="getLastCommit()">
+						<input type="button" value="Load" tabindex="3" class="gitHubSubmit" onclick="loadContent()">
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="page">
+		<div class="menu">
+			<nav>
+				<ul class="tttt"></ul>
+			</nav>
+		</div>
+		<div class="content">
+			
+			<label class="text_label" style="display: table;"></label>
+			<textarea rows="20" cols="80" id="fileContent" class="edit">
+			</textarea>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
